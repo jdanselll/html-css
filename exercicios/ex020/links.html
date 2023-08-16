@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /*  comentario para lembrar  # = id
+                                .   = class
+                                :   = pseudo class 
+                                ::  =  pseudo elemento
+                                 >  =  children  */
+        body {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        a {
+            color: rgb(9, 185, 50);
+            text-decoration: none;
+            font-weight: bolder;
+
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: black;
+        }
+
+        a:visited {
+            color: rgb(213, 37, 175);
+        }
+
+        a:active {
+            color: rgb(236, 8, 8);
+        }
+
+        a::after {
+            content: ' link ';
+            /*pode se colocar simbolos se quiser*/
+            text-decoration: under line;
+            font-weight: normal;
+            color: rgb(229, 147, 14);
+        }
+
+        .especial::before {
+            color: rgb(18, 12, 1);
+            content: ' >  ' ;
+           
+        }
+        .especial { background-color: aqua}
+
+        ;
+    </style>
+</head>
+<!--  aprendemos outras duas pseudo classes- visited  e active-->
+
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://github.com/gustavoguanabara" class="especial" target="_blank">Repositorio GTHUB</a></li>
+        <li><a href="https://www.youtube.com/@tvguanabarainfo/about" target="_blank">Canal do Youtube</a></li>
+        <li><a href="https://www.youtube.com/channel/UCrWvhVmt0Qac3HgsjQK62FQ" target="_blank">Site do Curso em
+                Video</a>
+        </li>
+    </ul>
+</body>
+
+</html>

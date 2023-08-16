@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+* {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+body {
+    background-image: linear-gradient(to right, rgb(237, 204, 152), rgb(228, 217, 189));
+}
+
+main {
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    width: 600px;
+    padding: 20px;
+    margin: auto;
+    box-shadow: 10px 10px 10px rgba(235, 143, 85, 0.404);
+   
+}
+
+h1 {
+    color: rgb(223, 138, 20);
+    text-align: center;
+    text-shadow: 1px 1px 2px rgb(74, 33, 4);
+}
+
+h2 {
+    color: rgb(189, 107, 18);
+}
+
+p {
+    text-align: justify;
+    color: rgb(86, 38, 5);
+    font-size: 20px;
+   
+}

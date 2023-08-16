@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em html 5</title>
+</head>
+
+<body>
+    <h1>Imagens Dinamicas</h1>
+    <p>tente abrir este site em varios dispositivos diferentes ou simplesmente aumente e diminua o seu navegador.</p>
+    <picture>
+
+        <source media="(max-width: 750px)" srcset="imagens/loira-p.jpg" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/loira-m.jpg" type="image/jpg">
+        <img src="imagens/loira-g.jpg" alt="imagem flexivel">
+    </picture>
+    <h1>Reproduzindo Audio</h1>
+    <p>
+        Vamos aprender a reproduzir audios no HTML 5
+    </p>
+    <p>uma das maneiras e ésta</p>
+    <audio src="midia/Get Down on it.mp3" controls play></audio>
+    <!--basicamente, audios sao mp3 wav ogg ,evitar wav que sao arquivos muito grandes na maioria-->
+
+    <h1>Agora vamos aprender Formatos de Videos</h1>
+    <video max width="300" src="midia/video-limao.mp4 " controls>
+    </video>
+
+</body>
+
+</html>
