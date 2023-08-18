@@ -78,6 +78,7 @@ nav {
 }
 
 nav a {
+    
     color: rgb(10, 180, 81);
     padding: 10px;
     text-decoration: none;
@@ -165,6 +166,7 @@ aside {
 }
 
 aside ul {
+    
     list-style-position: inside;
     columns: 2;
     list-style-type: "\2714\00A0";
