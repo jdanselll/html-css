@@ -4,28 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IMAGEM DE FUNDO</title>
+    <title>Fundo fixo de tela</title>
     <style>
-        body { height: 100vh;
-            background-color: rgb(0, 0, 0);
+        body {
+            height: 100vh;
+            /* background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
-            background-position: center ; background-repeat: repeat-y; 
+            background-position: center center ; background-repeat: no-repeat; 
+            background-attachment: fixed;
+            background-size: cover; */
+
+            /* shorthand de background nessa ordem
+           color > imagem > position > repeat > size > attachment  obs: size nao funcionou entao acrescentar separado*/
+
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
             background-size: cover;
         }
 
         main {
 
             background-color: rgb(249, 247, 247);
-            width: 400px;
+            max-width: 400px;
             padding: 15px;
             margin: auto;
-            border: 1px solid darkblue;
+            border: 1px solid rgb(222, 4, 4);
             border-radius: 15px;
-            
-            
-        }
 
-    
+
+
+        }
     </style>
 </head>
 
@@ -39,30 +46,49 @@
             ipsum dolor sit, amet consectetur adipisicing elit. Eum, optio iure nihil veniam consequuntur, eaque
             perspiciatis saepe nulla obcaecati totam esse quisquam voluptatibus, distinctio expedita sint quam!
             Corporis, eos ea.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam ratione nihil esse! Quibusdam, suscipit? Debitis maiores, et accusamus quis mollitia vero molestiae eligendi, deleniti commodi, reprehenderit atque possimus aperiam voluptate?
-            Alias tempora recusandae culpa laborum dolor distinctio nihil non incidunt omnis molestiae soluta eos tempore ipsum, atque fuga cumque velit possimus eaque est aut totam. Repellat ratione consectetur ducimus reiciendis?
-            Quae ratione nisi est officia assumenda sint harum quis, possimus animi ad! Voluptas, error. Pariatur obcaecati dicta nesciunt magni autem tempora quidem voluptatum veniam rerum aliquam! Aliquid delectus esse non?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta saepe iusto vel id sed ad hic itaque, aliquam
-                quas sapiente beatae consequatur illo rerum dolores eos. Temporibus reiciendis omnis atque!Lorem ipsum dolor
-                sit amet consectetur, adipisicing elit. Et impedit recusandae fugiat, doloribus facilis, velit accusamus
-                provident eos eveniet voluptatum nostrum porro nulla consequuntur sit esse consectetur harum, ex illo.Lorem
-                ipsum dolor sit, amet consectetur adipisicing elit. Eum, optio iure nihil veniam consequuntur, eaque
-                perspiciatis saepe nulla obcaecati totam esse quisquam voluptatibus, distinctio expedita sint quam!
-                Corporis, eos ea.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam ratione nihil esse! Quibusdam, suscipit? Debitis maiores, et accusamus quis mollitia vero molestiae eligendi, deleniti commodi, reprehenderit atque possimus aperiam voluptate?
-                Alias tempora recusandae culpa laborum dolor distinctio nihil non incidunt omnis molestiae soluta eos tempore ipsum, atque fuga cumque velit possimus eaque est aut totam. Repellat ratione consectetur ducimus reiciendis?
-                Quae ratione nisi est officia assumenda sint harum quis, possimus animi ad! Voluptas, error. Pariatur obcaecati dicta nesciunt magni autem tempora quidem voluptatum veniam rerum aliquam! Aliquid delectus esse non?</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta saepe iusto vel id sed ad hic itaque, aliquam
-                    quas sapiente beatae consequatur illo rerum dolores eos. Temporibus reiciendis omnis atque!Lorem ipsum dolor
-                    sit amet consectetur, adipisicing elit. Et impedit recusandae fugiat, doloribus facilis, velit accusamus
-                    provident eos eveniet voluptatum nostrum porro nulla consequuntur sit esse consectetur harum, ex illo.Lorem
-                    ipsum dolor sit, amet consectetur adipisicing elit. Eum, optio iure nihil veniam consequuntur, eaque
-                    perspiciatis saepe nulla obcaecati totam esse quisquam voluptatibus, distinctio expedita sint quam!
-                    Corporis, eos ea.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam ratione nihil esse! Quibusdam, suscipit? Debitis maiores, et accusamus quis mollitia vero molestiae eligendi, deleniti commodi, reprehenderit atque possimus aperiam voluptate?
-                    Alias tempora recusandae culpa laborum dolor distinctio nihil non incidunt omnis molestiae soluta eos tempore ipsum, atque fuga cumque velit possimus eaque est aut totam. Repellat ratione consectetur ducimus reiciendis?
-                    Quae ratione nisi est officia assumenda sint harum quis, possimus animi ad! Voluptas, error. Pariatur obcaecati dicta nesciunt magni autem tempora quidem voluptatum veniam rerum aliquam! Aliquid delectus esse non?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam ratione nihil esse! Quibusdam, suscipit?
+            Debitis maiores, et accusamus quis mollitia vero molestiae eligendi, deleniti commodi, reprehenderit atque
+            possimus aperiam voluptate?
+            Alias tempora recusandae culpa laborum dolor distinctio nihil non incidunt omnis molestiae soluta eos
+            tempore ipsum, atque fuga cumque velit possimus eaque est aut totam. Repellat ratione consectetur ducimus
+            reiciendis?
+            Quae ratione nisi est officia assumenda sint harum quis, possimus animi ad! Voluptas, error. Pariatur
+            obcaecati dicta nesciunt magni autem tempora quidem voluptatum veniam rerum aliquam! Aliquid delectus esse
+            non?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta saepe iusto vel id sed ad hic itaque, aliquam
+            quas sapiente beatae consequatur illo rerum dolores eos. Temporibus reiciendis omnis atque!Lorem ipsum dolor
+            sit amet consectetur, adipisicing elit. Et impedit recusandae fugiat, doloribus facilis, velit accusamus
+            provident eos eveniet voluptatum nostrum porro nulla consequuntur sit esse consectetur harum, ex illo.Lorem
+            ipsum dolor sit, amet consectetur adipisicing elit. Eum, optio iure nihil veniam consequuntur, eaque
+            perspiciatis saepe nulla obcaecati totam esse quisquam voluptatibus, distinctio expedita sint quam!
+            Corporis, eos ea.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam ratione nihil esse! Quibusdam, suscipit?
+            Debitis maiores, et accusamus quis mollitia vero molestiae eligendi, deleniti commodi, reprehenderit atque
+            possimus aperiam voluptate?
+            Alias tempora recusandae culpa laborum dolor distinctio nihil non incidunt omnis molestiae soluta eos
+            tempore ipsum, atque fuga cumque velit possimus eaque est aut totam. Repellat ratione consectetur ducimus
+            reiciendis?
+            Quae ratione nisi est officia assumenda sint harum quis, possimus animi ad! Voluptas, error. Pariatur
+            obcaecati dicta nesciunt magni autem tempora quidem voluptatum veniam rerum aliquam! Aliquid delectus esse
+            non?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta saepe iusto vel id sed ad hic itaque, aliquam
+            quas sapiente beatae consequatur illo rerum dolores eos. Temporibus reiciendis omnis atque!Lorem ipsum dolor
+            sit amet consectetur, adipisicing elit. Et impedit recusandae fugiat, doloribus facilis, velit accusamus
+            provident eos eveniet voluptatum nostrum porro nulla consequuntur sit esse consectetur harum, ex illo.Lorem
+            ipsum dolor sit, amet consectetur adipisicing elit. Eum, optio iure nihil veniam consequuntur, eaque
+            perspiciatis saepe nulla obcaecati totam esse quisquam voluptatibus, distinctio expedita sint quam!
+            Corporis, eos ea.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam ratione nihil esse! Quibusdam, suscipit?
+            Debitis maiores, et accusamus quis mollitia vero molestiae eligendi, deleniti commodi, reprehenderit atque
+            possimus aperiam voluptate?
+            Alias tempora recusandae culpa laborum dolor distinctio nihil non incidunt omnis molestiae soluta eos
+            tempore ipsum, atque fuga cumque velit possimus eaque est aut totam. Repellat ratione consectetur ducimus
+            reiciendis?
+            Quae ratione nisi est officia assumenda sint harum quis, possimus animi ad! Voluptas, error. Pariatur
+            obcaecati dicta nesciunt magni autem tempora quidem voluptatum veniam rerum aliquam! Aliquid delectus esse
+            non?</p>
     </main>
-    
+
 </body>
 
 </html>
