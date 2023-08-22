@@ -17,7 +17,7 @@
 
 html body {
     min-height: 100vh;
-    background-color: darkgray;
+
     font-family: var(--font1);
 }
 
@@ -37,8 +37,8 @@ header>h1 {
 }
 
 header>p {
-    padding-bottom: 50px;
-}
+    padding-bottom: 40px;}
+   
 
 section {
     padding-top: 10%;
@@ -47,47 +47,57 @@ section {
     padding-left: 30px;
     font-family: var(--font3);
     font-size: 3.5vw;
+    
 }
 
 section.normal {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(236, 244, 236);
     color: black;
 }
 
 section>p {
     padding-bottom: 2em;
+   
 }
 
 section.imagem {
-    background-color: rgb(66, 71, 69);
-    color: white; box-shadow: inset 6px 6px 13px 0px rgba(18, 0, 14, 0.498);
+    background-color: rgb(11, 212, 132);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(18, 0, 14, 0.498);
     background-size: cover;
     background-attachment: fixed;
 }
 
 section.imagem>p {
-    background-color: rgba(1, 23, 10, 0.549);
+    background-color: rgba(0, 10, 4, 0.549);
     display: inline-block;
-    padding: 5px; text-shadow: 2px 2px 0px rgb(241, 194, 26) ;
+    
+    text-shadow: 2px 2px 0px rgb(241, 194, 26);
 }
 
-section#img01 {background-image: url('../imagens/background001.jpg');background-position: right center;}
+section#img01 {
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+}
 
-section#img02 {background-image: url('../imagens/background002.jpg');}
+section#img02 {
+    background-image: url('../imagens/background002.jpg');
+}
 
 a {
-    color: white;
+    color: rgb(244, 247, 252);
     text-decoration: none;
     font-weight: bolder;
 
 }
 
-a :hover {
-    text-decoration: underline;
+a:hover {
+    text-decoration: underline; color: rgb(109, 184, 10);
+
 }
 
 footer {
-    background-color: rgb(1, 11, 11);
+    background-color: rgb(4, 42, 19);
     text-align: center;
     color: white;
     padding: 10px 10px;
