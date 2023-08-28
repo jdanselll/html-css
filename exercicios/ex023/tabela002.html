@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Maiores</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+
+        }
+        
+tbody tr:nth-child(2n) {background-color: lightcoral;}
+    /*efeito zebrado* neste caso de duas em duas*/
+
+        caption {
+            font-size: 1.3em;
+            background-color: rgb(193, 197, 196);
+            font-weight: bold;
+            padding: 6px;
+        }
+
+
+        table {
+            border-collapse: collapse;
+            width: 600px;
+
+            margin: 10px;
+        }
+
+        td,
+        th {
+            border: 1px solid black;
+            padding: 5px;
+            text-align: center;
+
+        }
+
+        thead {
+            background-color: rgb(83, 85, 85);
+            color: white;
+        }
+
+        .total {
+            color: rgb(2, 7, 156);
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: right;
+        }
+
+        .num {
+            text-align: right;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        }
+
+
+        tfoot {
+            background-color: gray;
+            color: white;
+        }
+    </style>
+
+</head>
+
+
+
+<!--anatomia para tabelas maiores
+        CAPTION  -  LEGENDA OU TITULO
+        TABLE 
+        - THEAD - CABEÇA DA TABELA
+        posso ter  tr , th , td
+        - TBODY  - CORPO DA TABELA
+        posso ter  tr , th , td
+        - FOOT - RODAPE DA TABELA
+        posso ter  tr , th , td
+    -->
+
+<body>
+
+    <h1>Uso de Tabelas Maiores</h1>
+
+
+    <table>
+        <caption>População Brasileria por Estados - 2022</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th> <!--scope "col" mesma coluna,
+                                                  scope row  mesma linha, la no foot-->
+                <th scope="col" style="width: 100px;">Populaçao</th>
+                <th scope="col" style="width: 100px;">Percentual</th>
+            </tr> <!--configuração pontual de style, largura das celulas -->
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">44.420.459</td>
+                <td>21,88%</td>
+            </tr>
+
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">20.538.718</td>
+                <td>10,11%</td>
+            </tr>
+
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">16.054.524</td>
+                <td>7,91%</td>
+            </tr>
+
+        </tbody>
+        <tfoot>
+            <th scope="row">Total de Habitantes</th>
+            <td class="total"><strong>81.013.701</strong></td>
+            <td>x</td>
+        </tfoot>
+    </table>
+</body>
+
+</html>

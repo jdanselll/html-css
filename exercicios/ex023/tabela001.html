@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha primeira tabela</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        td {
+
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;         
+            color: rgb(10, 4, 0);   /*alinhamento horizontal*/
+            font-weight: bolder;
+            vertical-align: top;            /*alinhamento vertical*/
+        }
+
+        table {
+            width: 400px; height: 400px;
+            border-collapse: collapse;      /*tira os espaços entre as celulas*/
+            margin: 10px;
+        }
+        .numero {text-align: right;}      /*alinhamento com class*/
+
+    </style>
+</head>
+
+<body>
+    <h1>Primeira tabela</h1>   <!--anatomia para tabelas SIMPLES
+        TABLE - TABELA
+       TR - TABLE ROW - LINHAS DA TABELA
+       TH - TABLE HEADER - CABEÇALHO DA TABELA
+       TD - TABLE DATA  = DADOS DA TABELA
+      
+  -->
+
+    <table>
+        <tr>
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+
+        </tr>
+        <tr>
+            <td>A2</td>
+            <td>B2</td>
+            <td class="numero">C2</td>
+
+        </tr>
+        <tr>
+            <td class="dado">A3</td>
+            <td>B3</td>
+            <td>C3</td>
+
+        </tr>
+        <tr>
+            <td>A4</td>
+            <td>B4</td>
+            <td class="numero">C4</td>
+
+        </tr>
+
+
+    </table>
+</body>
+
+</html>
