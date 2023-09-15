@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right, rgb(133, 240, 239), rgb(24, 128, 151));
+}
+p {font-size: 1.3em;}
+h1 {
+    text-align: center;
+}
+
+.box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(39, 107, 51, 0.5);
+    padding: 15px;
+    border-radius: 20PX;
+    width: 50%;
+
+}
+
+fieldset {
+    border: 3px solid rgb(6, 75, 16); padding: 20px; border-radius: 20px;
+}
+
+legend {
+    text-align: center;
+    color: rgb(11, 1, 11);
+    border: 1px solid rgb(28, 96, 60);
+    padding:  10px;
+    background-color: rgba(9, 86, 23, 0.565);
+    border-radius: 20px;
+}
+
+legend :hover {
+    color: rgb(44, 246, 9);
+}
+input {font-size: 1.3em; color: black; background-color: rgba(166, 149, 242, 0.457);}

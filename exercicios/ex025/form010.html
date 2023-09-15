@@ -5,16 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formularios</title>
+    <link rel="stylesheet" href="style.css">
+    
 </head>
 
 <body>
     <h1>Testes de Formularios</h1>
 
+<div class="box">
+    <form action="cadastro.php" method="get" autocomplete="on" >
 
-    <form action="cadastro.php" method="get" autocomplete="on">
-
-
-        <p>
+<fieldset>
+    <legend><h2>IDADE</h2></legend>
+    <p>
             <label for="iano">Em que ano voce Nasceu :</label>
             <input type="number" name="ano" id="iano" min="1900" max="2023" oninput="calcIdade()">
         </p>
@@ -23,12 +26,15 @@
             <output id="iidade"> ... </output>
         </p>
         <p>
-            <input type="submit" value="enviar">
-            <input type="reset" value="limpar">
-        </p>
+            <input type="submit" value="Enviar" id="box">
+            <input type="reset" value="Limpar">
+        </p></fieldset>
+        
 
 
     </form>
+</div>
+    
 
     <script>
         function calcIdade() {
