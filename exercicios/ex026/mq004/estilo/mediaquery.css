@@ -1,0 +1,137 @@
+@charset "UTF-8";
+
+/* criando para os demais dispositivos*/
+
+/*pesquisar typical device breakpoints*/
+
+/*Pequenas Telas: até 600px
+celular: de 600px até 768px
+tablet: de 768px até 990px
+pc: 990px até 1200px
+Grandes Telas: acima de 1200px*/
+
+@media print {
+
+    * { font-family: 'Courier New', Courier, monospace; }
+
+   body { background-image: url(/imagens/back-print.jpg);}
+   main  h1 { text-shadow: none; color: black; 
+
+}
+main {
+    border: 2px solid black; width: 90vw;
+}
+main::after { content: 'Essa impressao foi gerada do exercicio'; text-decoration: overline;}
+   
+#phone {
+    display: none;
+}
+
+#tablet {
+    display: none;
+}
+
+#print {
+    display: block;
+}
+
+#pc {
+    display: none;
+}
+
+#tv {
+    display: none;
+}
+
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 990px) {
+    body {
+        background-image: url(/imagens/back-tablet.jpg);
+    }
+
+    #phone {
+        display: none;
+    }
+
+    #tablet {
+        display: block;
+    }
+
+    #print {
+        display: none;
+    }
+
+    #pc {
+        display: none;
+    }
+
+    #tv {
+        display: none;
+    }
+
+    main {
+        background-color: rgba(18, 149, 201, 0.359);
+    }
+}
+
+@media screen and (min-width: 990px) and (max-width: 1200px) {
+    body {
+        background-image: url(/imagens/back-pc.jpg);
+    }
+
+    #phone {
+        display: none;
+    }
+
+    #tablet {
+        display: none;
+    }
+
+    #print {
+        display: none;
+    }
+
+    #pc {
+        display: block;
+    }
+
+    #tv {
+        display: none;
+    }
+
+    main {
+        background-color: rgba(3, 0, 5, 0.365); width: 500px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        background-image: url(/imagens/back-tv.jpg);
+    }
+
+    #phone {
+        display: none;
+    }
+
+    #tablet {
+        display: none;
+    }
+
+    #print {
+        display: none;
+    }
+
+    #pc {
+        display: none;
+    }
+
+    #tv {
+        display: block;
+    }
+
+    main {
+        background-color: rgba(1, 17, 17, 0.422); width: 700px;
+    }
+}

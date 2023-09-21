@@ -10,18 +10,18 @@
     box-sizing: border-box;
 }
 
-
 html {
-   
     height: 100vh;
 }
 
 body {
-    background: url(../back-phone.jpg) no-repeat; background-size: cover; background-position: center center;
+    background: url(/imagens/back-phone.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 
 main {
-    background-color: rgba(255, 255, 255, 0.468);
+    background-color: rgba(167, 152, 152, 0.622);
     width: 400px;
     margin: auto;
     margin-top: 20px;
@@ -32,13 +32,13 @@ main {
 h1 {
     color: white;
     text-align: center;
-    text-shadow: 5px 3px 3px #011388; ;
+    text-shadow: 5px 3px 3px #011388;
+
 }
 
 img {
     display: block;
     margin: auto;
-
 }
 
 #phone {
