@@ -132,6 +132,6 @@ main::after { content: 'Essa impressao foi gerada do exercicio'; text-decoration
     }
 
     main {
-        background-color: rgba(1, 17, 17, 0.422); width: 700px;
+        background-color: rgba(1, 18, 18, 0.291); width:750px;
     }
 }
